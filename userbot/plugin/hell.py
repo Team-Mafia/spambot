@@ -1,3 +1,12 @@
+import asyncio
+import random
+
+from userbot import *
+from userbot.plugins import *
+
+NUMBER = ["0", "1"]
+
+
 HELL = [
     "MADARCHOD TERI MAA KI CHUT ME GHUTKA KHAAKE THOOK DUNGA 🤣🤣",
     "TERE BEHEN K CHUT ME CHAKU DAAL KAR CHUT KA KHOON KAR DUGA",
@@ -297,3 +306,4 @@ HELL = [
     "TERA MAA MERI FAN",
     "TERI SEXY BAHEN KI CHUT OP",
 ]
+
