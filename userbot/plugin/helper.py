@@ -4,13 +4,13 @@ from telethon.errors.rpcerrorlist import BotInlineDisabledError as noinline
 from telethon.errors.rpcerrorlist import BotMethodInvalidError as dedbot
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from EAGLEMAFIA SPAMUSEERBOT.utils import admin_cmd, sudo_cmd
+from EAGLEMAFIA-USPAMBOT.utils import admin_cmd, sudo_cmd
 from userbot import CMD_LIST, bot
 from userbot.Config import Config
 
 from . import *
 
-perf = "[ ⭐🌟 ஜ۩۞۩ஜ 𝐄𝐀𝐆𝐋𝐌𝐀𝐅𝐈𝐀 𝐒𝐏𝐀𝐌𝐔𝐒𝐄𝐑𝐁𝐎𝐓 ஜ۩۞۩ஜ 🌟⭐ ]"
+perf = "[ ⭐🌟 ஜ۩۞۩ஜ 𝐄𝐀𝐆𝐋𝐌𝐀𝐅𝐈𝐀 𝐔𝐒𝐏𝐀𝐌𝐁𝐎𝐓 ஜ۩۞۩ஜ 🌟⭐ ]"
 
 onbot = "start - Check if I am Alive \nhack - Hack Anyone Through String Session\nping - Pong! \ntr - <lang-code> \nbroadcast - Sends Message To all Users In Bot \nid - Shows ID of User And Media. \naddnote - Add Note \nnotes - Shows Notes \nspam - spam value text (value < 100)\nbigspam - spam value text (value > 100) \nraid - Raid value Reply to Anyone \nreplyraid - Reply To Anyone \ndreplyraid - Reply To Anyone \nrmnote - Remove Note \nalive - Am I Alive? \nbun - Works In Group , Bans A User. \nunbun - Unbans A User in Group \nprumote - Promotes A User \ndemute - Demotes A User \npin - Pins A Message \nstats - Shows Total Users In Bot \npurge - Reply It From The Message u Want to Delete (Your Bot Should be Admin to Execute It) \ndel - Reply a Message Tht Should Be Deleted (Your Bot Should be Admin to Execute It)"
 
@@ -29,9 +29,9 @@ else:
 
 
 msg = f"""
-**⚜ 𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝚏 𝙻𝚎𝚐𝚎𝚗𝚍𝙱𝚘𝚝 ⚜**
-  •        [♥️ 𝚁𝚎𝚙𝚘 ♥️](https://github.com/mafia-op/EAGLEMAFIA-SPAMUSERBOT)
-  •        [♦️ Deploy ♦️](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fmafia-op%2FEAGLEMAFIA-SPAMUSERBOT&template=https%3A%2F%2Fgithub.com%2Fmafia-op%2FEAGLEMAFIA-SPAMUSERBOT)
+**⚜ 𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝚏 𝐄𝐀𝐆𝐋𝐌𝐀𝐅𝐈𝐀 𝐔𝐒𝐏𝐀𝐌𝐁𝐎𝐓 ⚜**
+  •        [♥️ 𝚁𝚎𝚙𝚘 ♥️](https://github.com/mafia-op/EAGLEMAFIA-USPAMBOT)
+  •        [♦️ Deploy ♦️](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fmafia-op%2FEAGLEMAFIA-USPAMBOT&template=https%3A%2F%2Fgithub.com%2Fmafia-op%2FEAGLEMAFIA-USPAMBOT)
   •  ©️ {EAGLE_channel} ™
 """
 
@@ -57,7 +57,7 @@ async def _(event):
     chat = "@Botfather"
     if tgbotusername is not None:
         try:
-            results = await event.client.inline_query(tgbotusername, "EAGLEMAFIA_SPAMUSEROT_help")
+            results = await event.client.inline_query(tgbotusername, "EAGLEMAFIA_USPAMBOT_help")
             await results[0].click(
                 event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
             )
@@ -99,7 +99,7 @@ async def yardim(event):
     tgbotusername = botname
     input_str = event.pattern_match.group(1)
     if tgbotusername is not None or EAGLE_input == "text":
-        results = await event.client.inline_query(tgbotusername, "EAGLEMAFIA_SPAMUSERBOT_help")
+        results = await event.client.inline_query(tgbotusername, "EAGLEMAFIA_USPAMBOT_help")
         await results[0].click(
             event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
         )
@@ -227,4 +227,4 @@ async def _(event):
 
     logger.info(result)  # pylint:disable=E0602
 
-    await event.edit("тєℓєтнση  вαѕє∂ υѕєявσт ρσωєяє∂ ву **𝐄𝐀𝐆𝐋𝐌𝐀𝐅𝐈𝐀 𝐒𝐏𝐀𝐌𝐔𝐒𝐄𝐑𝐁𝐎𝐓** вσт")
+    await event.edit("тєℓєтнση  вαѕє∂ υѕєявσт ρσωєяє∂ ву **𝐄𝐀𝐆𝐋𝐌𝐀𝐅𝐈𝐀 𝐔𝐒𝐏𝐀𝐌𝐁𝐎𝐓** вσт")
