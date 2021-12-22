@@ -1,7 +1,3 @@
-# Plugin to show the feds you are banned in.
-# Kangers keep credits
-# By @Surv_ivor
-
 import os
 
 from telethon.errors import ChatAdminRequiredError
