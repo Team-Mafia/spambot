@@ -5,13 +5,12 @@ Import time
 From telethon.errors import ChatSendInlineForbiddenError as noin
 From telethon.errors.rpcerrorlist import BotMethodInvalidError as dedbot
 
-From userbot.sql.gvar_sql import gvarstat
 From . import *
 
 #-------------------------------------------------------------------------------
 
 ALIVE_TEMP = “””
-<b><i>🔥🔥𝔐𝔄𝔉ℑ𝔄 𝔖𝔓𝔄𝔐 𝔅𝔒𝔗 ɨs օռʟɨռɛ🔥🔥</b></i>
+<b><i>🔥🔥EAGLEMAFIA-USPAMBOT 🔥🔥</b></i>
 <i><b>↼ Øwñêr ⇀</i></b> : 『 <a href=’tg://user?id={}’>{}</a> 』
 ╭──────────────
 ┣─ <b>» Telethon ~</b> <i>{}</i>
