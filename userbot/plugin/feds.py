@@ -5,9 +5,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.users import GetFullUserRequest
 
 from ..utils import admin_cmd , sudo_cmd
-from . import ALIVE_NAME
 
-naam = str(ALIVE_NAME)
 
 bots = "@MissRose_bot"
 
