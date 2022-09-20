@@ -11,11 +11,11 @@ naam = str(ALIVE_NAME)
 
 bots = "@MissRose_bot"
 
-BOTLOG_CHATID = Config.PRIVATE_GROUP_BOT_API_ID
+BOTLOG_CHATID = Config.PM_LOG_ID 
 
-G_BAN_LOGGER_GROUP = os.environ.get("G_BAN_LOGGER_GROUP", None)
+G_BAN_LOGGER_GROUP = os.environ.get("PM_LOG_ID ", None)
 if G_BAN_LOGGER_GROUP:
-    G_BAN_LOGGER_GROUP = int(G_BAN_LOGGER_GROUP)
+    G_BAN_LOGGER_GROUP = int(PM_LOG_ID)
 
 
 @bot.on(admin_cmd("fstat ?(.*)"))
@@ -66,8 +66,8 @@ async def _(event):
                 await event.edit("**Error:** `unblock` @MissRose_Bot `and try again!")
 
 
-@bot.on(admin_cmd("roseinfo ?(.*)"))
-@bot.on(sudo_cmd("roseinfo ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd("info ?(.*)"))
+@bot.on(sudo_cmd("info ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -134,8 +134,8 @@ async def _(event):
                 await event.edit("**Error:** `unblock` @MissRose_Bot `and try again!")
 
 
-@bot.on(admin_cmd("myfeds ?(.*)"))
-@bot.on(sudo_cmd("myfeds ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd("feds ?(.*)"))
+@bot.on(sudo_cmd("feds ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -156,8 +156,8 @@ async def _(event):
             await event.edit("**Error:** `unblock` @MissRose_Bot `and try again!")
 
 
-@bot.on(admin_cmd(pattern=r"plist ?(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern=r"plist ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"tfn ?(.*)", outgoing=True))
+@bot.on(sudo_cmd(pattern=r"tfn ?(.*)", allow_sudo=True))
 async def get_users(show):
     await show.delete()
     if not show.text[0].isalpha() and show.text[0] not in ("/"):
@@ -196,8 +196,8 @@ async def get_users(show):
         )
 
 
-@bot.on(admin_cmd(pattern=r"blist ?(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern=r"blist ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"fsn ?(.*)", outgoing=True))
+@bot.on(sudo_cmd(pattern=r"fsn ?(.*)", allow_sudo=True))
 async def get_users(show):
     await show.delete()
     if not show.text[0].isalpha() and show.text[0] not in ("/"):
